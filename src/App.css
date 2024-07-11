@@ -1,0 +1,295 @@
+#root, html, body {
+    margin: 0; 
+    padding: 0;
+    height: 100vh;
+    box-sizing: border-box;
+
+
+}
+
+.app {
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('./images/city.jpg');
+
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+.logo {
+  margin: 0;
+  padding: 0;
+  margin-top: -555px;
+  margin-left: -350px;
+  margin-left: -450px;
+  width: 15%;
+  cursor: pointer;
+  
+ 
+
+
+}
+
+ .card{
+    background-color: transparent;
+
+    width: 50%;
+    height: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 25px;
+    padding: 2%;
+    box-shadow: 3px 3px 7px 7px;
+    color: white;
+    
+ }
+
+  .heading{
+    display: flex;
+    align-items: center;
+    height: 580px;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .btn {
+    position: relative;
+    outline: none;
+    text-decoration: none;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    text-transform: uppercase;
+    height: 200px;
+    width: 210px;
+    opacity: 1;
+    background-color: #ffffff;
+    border: 1px solid rgba(22, 76, 167, 0.6);
+  }
+    
+  .btn span {
+    color: #164ca7;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.7px;
+  }
+    
+  .btn:hover {
+    animation: rotate 0.7s ease-in-out both;
+  }
+    
+  .btn:hover span {
+    animation: storm 0.7s ease-in-out both;
+    animation-delay: 0.06s;
+  }
+    
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg) translate3d(0, 0, 0);
+    }
+    25% {
+      transform: rotate(3deg) translate3d(0, 0, 0);
+    }
+    50% {
+      transform: rotate(-3deg) translate3d(0, 0, 0);
+    }
+    75% {
+      transform: rotate(1deg) translate3d(0, 0, 0);
+    }
+    100% {
+      transform: rotate(0deg) translate3d(0, 0, 0);
+    }
+  }
+    
+  @keyframes storm {
+    0% {
+      transform: translate3d(0, 0, 0) translateZ(0);
+    }
+    25% {
+      transform: translate3d(4px, 0, 0) translateZ(0);
+    }
+    50% {
+      transform: translate3d(-3px, 0, 0) translateZ(0);
+    }
+    75% {
+      transform: translate3d(2px, 0, 0) translateZ(0);
+    }
+    100% {
+      transform: translate3d(0, 0, 0) translateZ(0);
+    }
+  }  
+  
+  @media only screen and (max-width: 600px) {
+    .card {
+        width: 80%;
+        height: 30%;
+    }
+  }
+
+  @media screen and (max-width: 1600px) {
+    .logo{
+      cursor: pointer;
+  margin: 0;
+  padding: 0;
+  margin-top: -535px;
+  
+  margin-left: -210px;
+  width: 18%;
+
+    }
+
+    .card {
+      width: 60%;
+      height: 30%;
+  }
+
+  .btn{
+
+    height: 130px;
+    width: 270px;
+
+  }
+
+  .heading{
+    height: 400px;
+    font-size: 30px;
+  }
+    
+  }
+
+
+  @media screen and (max-width: 1280px) {
+    .logo{
+      cursor: pointer;
+  margin: 0;
+  padding: 0;
+  margin-top: -500px;
+  
+  margin-left: -110px;
+  width: 18%;
+
+    }
+
+    .card {
+      width: 65%;
+      height: 25%;
+  }
+
+  .btn{
+
+    height: 120px;
+    width: 210px;
+
+  }
+
+  .heading{
+    height: 370px;
+    font-size: 25px;
+  }
+    
+  }
+  
+
+  @media screen and (max-width: 1000px) {
+    .logo{
+      cursor: pointer;
+  margin: 0;
+  padding: 0;
+  margin-top: -510px;
+  
+  margin-left: -110px;
+  width: 16%;
+
+    }
+
+    .card {
+      width: 60%;
+      height: 25%;
+  }
+
+  .btn{
+
+    height: 100px;
+    width: 170px;
+
+  }
+
+  .heading{
+    height: 350px;
+    font-size: 23px;
+  }
+    
+  }
+  
+
+  @media screen and (max-width: 800px) {
+    .logo{
+      cursor: pointer;
+  margin: 0;
+  padding: 0;
+  margin-top: -510px;
+  
+  margin-left: -100px;
+  width: 19%;
+
+    }
+
+    .card {
+      width: 60%;
+      height: 25%;
+  }
+
+  .btn{
+
+    height: 90px;
+    width: 170px;
+
+  }
+
+  .heading{
+    height: 330px;
+    font-size: 18px;
+  }
+    
+  }
+  
+
+
+  @media screen and (max-width: 600px) {
+    .logo{
+      cursor: pointer;
+  margin: 0;
+  padding: 0;
+  margin-top: -530px;
+  
+  margin-left: -25px;
+  width: 24%;
+
+    }
+
+    .card {
+      width: 65%;
+      height: 25%;
+  }
+
+  .btn{
+
+    height: 50px;
+    width: 170px;
+
+  }
+
+  .heading{
+    height: 250px;
+    font-size: 15px;
+  }
+    
+  }
+  
