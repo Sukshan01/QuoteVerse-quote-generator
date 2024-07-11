@@ -1,8 +1,13 @@
 import React from "react";
 import axios from "axios";
-import logo from './logo-no-background.png'
-
 import './App.css';
+// import logo from './logo-no-background.png'
+
+
+const logo = process.env.REACT_APP_LOGO;
+
+
+
 
 class App extends React.Component{
 
